@@ -12,6 +12,7 @@ body {
     margin: 5px;
 }
 h2{
+    color: grey;
     display: block;
 }
 .row{
@@ -21,27 +22,25 @@ h2{
 }
 .name {
     font-size: 1.5rem;
-    color: grey;
+    color: white;
 }
 .sels{
     display: flex;
+}
+[type=radio]{
+    cursor: pointer;
+    margin: 9px;
+}
+[type=radio]:checked{
+    background-color: grey;
+    color: white;
+
 }
 .sel{
     cursor: pointer;
     border: 1px solid white;
     width: 40px;
     height: 40px;
-}
-@media only screen and (max-width: 450px) {
-    h1 {
-        display: none;
-    }
-    .row{
-        grid-template-columns: 30% 1fr;
-    }
-    .name {
-        font-size: 1rem;
-    }
 }
 .sel:hover{
     border: 2px solid rebeccapurple;
@@ -57,4 +56,20 @@ h2{
 }
 button{
     float: right;
+    margin-top: 1px;
+}
+@media only screen and (max-width: 450px) {
+    h1 {
+        display: none;
+    }
+    .row{
+        grid-template-columns: 30% 1fr;
+    }
+    .name {
+        font-size: 1rem;
+    }
+    button{
+        margin-right: 40px;
+        margin-top: 20px;
+    }
 }
